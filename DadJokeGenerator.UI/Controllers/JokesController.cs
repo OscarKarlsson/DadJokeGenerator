@@ -39,7 +39,9 @@ namespace DadJokeGenerator.UI.Controllers
 
         public IActionResult viewHistory()
         {
-            return View();
+            List<string> allJokes = new List<string>();
+            allJokes = _dadJokeManager.GetAllCache();
+            return View(allJokes);
         }
     }
 }

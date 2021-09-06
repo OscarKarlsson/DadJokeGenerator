@@ -1,3 +1,7 @@
-﻿@{
+﻿@model List<string>
+@{
 }
-
+@foreach (var item in @Model)
+	{
+		 <p style="color:white;outline-style:dashed;outline-color:red;text-align:center">@item</p>
+	}
