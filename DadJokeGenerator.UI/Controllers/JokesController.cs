@@ -19,7 +19,7 @@ namespace DadJokeGenerator.UI.Controllers
         public async Task<IActionResult> Index()
         {
             JokeModel joke = await _dadJokeManager.GetDadJoke();
-            JokeHistory.Jokes.Add(joke.ToString());
+
             return View(joke);
         }
 
