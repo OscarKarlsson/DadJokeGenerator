@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DadJokeGenerator.API\DadJokeGenerator.API.csproj" />
+    <ProjectReference Include="..\DadJokeGenerator.DTO\DadJokeGenerator.DTO.csproj" />
+  </ItemGroup>
+
+</Project>
